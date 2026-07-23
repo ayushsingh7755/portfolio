@@ -42,9 +42,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary !px-4 !py-2 text-xs">
-            Let's talk
-          </a>
+          
         </nav>
 
         <button
