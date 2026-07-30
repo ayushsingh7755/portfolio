@@ -1,49 +1,88 @@
 const PROJECTS = [
   {
-    tag: 'OUT-01',
-    name: 'CampusHub',
-    role: 'Flagship Project',
+    tag: "OUT-01",
+    name: "CampusHub",
+    role: "Flagship Project",
     description:
-      'A full-stack MERN peer-to-peer campus marketplace where students list, bid on, and buy items directly from each other. Built end to end — schema design, auth, and a neon-accented dark UI.',
+      "A full-stack MERN peer-to-peer campus marketplace where students list, bid on, and buy items directly from each other. Built end to end — schema design, auth, and a neon-accented dark UI.",
     highlights: [
-      'Bid/buy negotiation system with real-time-feeling dashboards',
-      'Product listings with image carousels and smart contact routing (WhatsApp / call / Gmail deep links)',
-      'Cookie-based authentication and role-aware account settings (avatar, password, profile updates)',
-      'Mobile-first responsive refactor across the component library using Tailwind breakpoints',
+      "Bid/buy negotiation system with real-time-feeling dashboards",
+      "Product listings with image carousels and smart contact routing (WhatsApp / call / Gmail deep links)",
+      "Cookie-based authentication and role-aware account settings (avatar, password, profile updates)",
+      "Mobile-first responsive refactor across the component library using Tailwind breakpoints",
     ],
-    stack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
-    deploy: 'Frontend on Vercel · Backend on Render',
+    stack: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    
     links: {
-      live: 'https://campus-hub-84sr.vercel.app',
-      code: 'https://github.com/ayushsingh7755/Campus-Hub',
+      live: "https://campus-hub-84sr.vercel.app",
+      code: "https://github.com/ayushsingh7755/Campus-Hub",
     },
   },
   {
-    tag: 'OUT-02',
-    name: 'Natural Products E-commerce Platform',
-    role: 'Full Stack Project',
+    tag: "OUT-02",
+    name: "Rivbond",
+    role: "Full Stack Project",
     description:
-      'A MERN-based e-commerce storefront for natural products, covering the full purchase journey from browsing to checkout, with a clean, trust-focused visual style distinct from CampusHub.',
+      "A MERN-based e-commerce clothing product, covering the full purchase journey from browsing to checkout, with a clean, trust-focused visual style.",
     highlights: [
-      'Custom-styled login and registration flows',
-      'Backend data models and controllers aligned for consistent product & order handling',
-      'Structured for straightforward extension into payments and order tracking',
+      "Custom-styled login and registration flows",
+      "3D product  image view",
+      "Backend data models and controllers aligned for consistent product & order handling",
+      "Structured for straightforward extension into payments and order tracking",
     ],
-    stack: ['React', 'Node.js', 'Express', 'MongoDB'],
-    deploy: 'In active development',
-    links: null,
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    
+    links: {
+      live: "https://rivbond.vercel.app/",
+      code: "https://github.com/ayushsingh7755/rivbond",
+    },
   },
-]
+  {
+    tag: "OUT-03",
+    name: "MindFul News",
+    role: "Full Stack Project",
+    description:
+      'MindfulNews is a smart news aggregator designed to combat "doom-scrolling." By analyzing the sentiment of global headlines, it allows users to filter news based on their emotional preference—whether they want to see positive, neutral, or critical updates.',
+    highlights: [
+      "Sophisticated filtering logic categorizes news into Positive, Negative, or Neutral buckets.",
+      "Users can toggle filters to customize their reading experience.",
+      "Fetches live news data using the NewsAPI.",
+    ],
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    
+    links: {
+      live: "https://rivbond.vercel.app/",
+      code: "https://github.com/ayushsingh7755/rivbond",
+    },
+  },
+  {
+    tag: "OUT-04",
+    name: "Ankita Organic",
+    role: "Full Stack Project",
+    description:
+      'Ankita Organic is a natural-food storefront with product browsing, search/category filters, product details, cart, JWT login/signup, protected checkout, COD ordering, order history, stock control and owner-ready product APIs.',
+    highlights: [
+      "JWT-based login/signup with protected routes",
+      "Checkout is protected behind auth",
+      "Cash-on-delivery ordering, order history, and stock control built in",
+      "Online payments aren't hardcoded yet — Razorpay/Stripe can be added later using backend-only secret keys"
+    ],
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    
+    links: {
+      live: "https://ankitaorganic.com",
+      code: "https://github.com/ayushsingh7755/ankita-organic",
+    },
+  },
+];
 
 export default function Projects() {
   return (
     <section id="projects" className="section-shell">
       <p className="eyebrow mb-4">Ref. Designator: OUT — Projects</p>
-      <h2 className="text-3xl font-bold text-ivory sm:text-4xl">Things I've built</h2>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-ivory-muted">
-        Selected work from my MERN stack journey — shipped, deployed, and still
-        being refined.
-      </p>
+      <h2 className="text-3xl font-bold text-ivory sm:text-4xl">
+        Things I've built
+      </h2>
 
       <div className="mt-12 flex flex-col gap-8">
         {PROJECTS.map((project) => (
@@ -55,7 +94,9 @@ export default function Projects() {
               <span className="font-mono text-[11px] tracking-[0.2em] text-copper">
                 {project.tag}
               </span>
-              <h3 className="mt-2 text-xl font-semibold text-ivory">{project.name}</h3>
+              <h3 className="mt-2 text-xl font-semibold text-ivory">
+                {project.name}
+              </h3>
               <p className="mt-1 font-mono text-xs uppercase tracking-[0.15em] text-signal">
                 {project.role}
               </p>
@@ -69,7 +110,7 @@ export default function Projects() {
                     rel="noreferrer"
                     className="font-mono text-xs text-signal underline decoration-signal/40 underline-offset-4 hover:text-signal-light"
                   >
-                    Live demo ↗
+                    Visit↗
                   </a>
                   <a
                     href={project.links.code}
@@ -89,8 +130,14 @@ export default function Projects() {
               </p>
               <ul className="mt-5 flex flex-col gap-2">
                 {project.highlights.map((h) => (
-                  <li key={h} className="flex gap-2 text-sm leading-relaxed text-ivory-muted">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-copper" aria-hidden="true" />
+                  <li
+                    key={h}
+                    className="flex gap-2 text-sm leading-relaxed text-ivory-muted"
+                  >
+                    <span
+                      className="mt-2 h-1 w-1 shrink-0 rounded-full bg-copper"
+                      aria-hidden="true"
+                    />
                     {h}
                   </li>
                 ))}
@@ -110,11 +157,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="mt-10">
-        <a href="https://github.com/ayushsingh7755" target="_blank" rel="noreferrer" className="btn-secondary">
-          See more on GitHub
-        </a>
-      </div>
+     
     </section>
-  )
+  );
 }

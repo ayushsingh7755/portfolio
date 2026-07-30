@@ -1,24 +1,20 @@
 const STACK = [
   {
     tag: 'FE',
-    title: 'Frontend',
-    items: ['React.js', 'Vite', 'Tailwind CSS', 'HTML5 & CSS3', 'JavaScript (ES6+)', 'Responsive / Mobile-first UI'],
+    title: 'Frontend and Languages',
+    items: ['React.js','TypeScript', 'Vite', 'Tailwind', 'HTML5 & CSS3', 'JavaScript (ES6+)', 'Responsive / Mobile-first UI',"Java","C/C++","SQL"],
   },
   {
     tag: 'BE',
     title: 'Backend',
-    items: ['Node.js', 'Express.js', 'REST API design', 'Cookie-based auth', 'MongoDB & Mongoose', 'CORS & env config'],
+    items: ['Node.js', 'Express.js', 'REST API design','PostgureSQL', 'Cookie-based auth', 'MongoDB ', 'CORS & env config'],
   },
   {
     tag: 'TL',
     title: 'Tools & Deployment',
-    items: ['Git & GitHub', 'Vercel', 'Render', 'Postman', 'VS Code', 'Cron-job monitoring'],
+    items: ['Git & GitHub', 'Vercel', 'Render', 'Postman', 'Cron-job monitoring'],
   },
-  {
-    tag: 'PL',
-    title: 'Beyond the Code',
-    items: ['Google Ads / Digital Marketing', 'UI/UX-focused design thinking', 'Physics & analytical reasoning', 'Product-minded problem solving'],
-  },
+  
 ]
 
 // Component-package pin row, purely decorative — echoes a DIP IC package.
@@ -37,10 +33,7 @@ export default function Skills() {
     <section id="skills" className="section-shell">
       <p className="eyebrow mb-4">Ref. Designator: STK — Skill Set</p>
       <h2 className="text-3xl font-bold text-ivory sm:text-4xl">The stack I build with</h2>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-ivory-muted">
-        Each module below is a set of tools I reach for regularly — treat it like a
-        parts list for the projects further down the page.
-      </p>
+      
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
         {STACK.map((group) => (

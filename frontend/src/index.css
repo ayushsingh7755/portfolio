@@ -35,7 +35,7 @@
   }
 
   .section-shell {
-    @apply relative mx-auto w-full max-w-5xl px-6 sm:px-8 py-20 sm:py-28;
+    @apply relative mx-auto w-full max-w-5xl px-6 sm:px-8 py-10 sm:py-14;
   }
 
   .trace-node {

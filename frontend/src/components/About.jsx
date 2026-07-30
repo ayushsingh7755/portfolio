@@ -4,8 +4,7 @@ export default function About() {
   return (
     <section id="about" className="section-shell">
       <h2 className="text-3xl font-bold text-ivory sm:text-4xl">About</h2>
-
-      <p className="mt-6 max-w-3xl text-base leading-relaxed text-ivory-muted sm:text-lg">
+      <p className="mt-3 max-w-3xl text-base leading-relaxed text-ivory-muted sm:text-lg">
         Hi, I'm Ayush Singh, and I make full-stack platforms that are fast,
         scalable, and built to solve real-world problems. I'm a MERN Stack
         Developer who enjoys transforming ideas into modern web applications
