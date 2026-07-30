@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 // The node for the section currently in view lights up as the visitor scrolls.
 const NODES = [
   { id: 'hero', label: 'SRC' },
-  { id: 'about', label: 'BIO' },
+  { id: 'about', label: 'ABT' },
   { id: 'skills', label: 'STK' },
   { id: 'projects', label: 'OUT' },
   { id: 'education', label: 'EDU' },
