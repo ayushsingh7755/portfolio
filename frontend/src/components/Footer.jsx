@@ -5,9 +5,7 @@ export default function Footer() {
         <p className="font-mono text-xs text-ivory-muted">
           © {new Date().getFullYear()} Ayush Singh. Built with the MERN stack.
         </p>
-        <p className="font-mono text-xs text-ivory-muted">
-          Designed &amp; developed from scratch — no template used.
-        </p>
+        
       </div>
     </footer>
   )

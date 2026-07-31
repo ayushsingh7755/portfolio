@@ -1,3 +1,4 @@
+import {useNavigate} from "react-router-dom"
 const EDUCATION = [
   {
     
@@ -9,33 +10,23 @@ const EDUCATION = [
   
 ]
 
+
 export default function Education() {
   return (
     <section id="education" className="section-shell">
       <p className="eyebrow mb-4">Ref. Designator: EDU — Education</p>
       <h2 className="text-3xl font-bold text-ivory sm:text-4xl">Education </h2>
 
-      <div className="mt-12 flex flex-col">
-        {EDUCATION.map((edu, idx) => (
-          <div key={edu.tag} className="relative flex gap-6 pb-10 last:pb-0">
-            <div className="flex flex-col items-center">
-              <span className="trace-node shrink-0" aria-hidden="true" />
-              {idx !== EDUCATION.length - 1 && (
-                <span className="mt-1 w-px flex-1 bg-ink-border" aria-hidden="true" />
-              )}
-            </div>
-            <div className="pb-2">
-             
-              <h3 className="mt-2 text-lg font-semibold text-ivory">{edu.title}</h3>
-              <p className="mt-1 text-sm text-ivory-muted">{edu.org}</p>
-              <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-signal">
-                {edu.period}
-              </p>
-              
-            </div>
-          </div>
-        ))}
+     <a  href="https://msit.in" className="flex border w-full border-gray-500 rounded-[4px] items-center p-3 mt-5 transition-all duration-300 hover:translate-x-1 hover:scale-102 ">
+      <img className="w-[65px] h-[65px]" src="/images/college.png" alt="" /> 
+      <div className="mt-2 flex-1 flex flex-col  p-6">
+       <div className="flex w-[100%] justify-between ">
+        <p>Maharaja Surajmal Institute of Technology </p>
+        <p>2024-2028</p>
+       </div>
+       <div className="text-[14px] text-gray-400">B.Tech, Information Technology (CGPA: 8.4)</div>
       </div>
+      </a>
     </section>
   )
 }
