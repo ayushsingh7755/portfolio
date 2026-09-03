@@ -27,7 +27,7 @@ export default function Contact() {
             className="chip flex items-center justify-between text-sm text-ivory hover:text-copper"
           >
             <span>Email</span>
-            <span className="font-mono text-xs text-ivory-muted">ayushsingh57571@gmail.com</span>
+            <span className="font-mono text-xs text-ivory-muted">ayushsingh.w01@gmail.com</span>
           </a>
           <a
             href="https://www.linkedin.com/in/ayush-singhb70525314"

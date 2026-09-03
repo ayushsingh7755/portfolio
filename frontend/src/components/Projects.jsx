@@ -18,8 +18,34 @@ const PROJECTS = [
       code: "https://github.com/ayushsingh7755/Campus-Hub",
     },
   },
-  {
+   {
     tag: "OUT-02",
+    name: "Ocean Sentinel",
+    role: "Full Stack Project",
+    description:
+      " AI powered MERN-stack application for government/marine research agencies to automatically analyze Side-Scan Sonar (SSS) imagery, detect ghost nets, pipes, cylinders, shipwrecks, and unknown artificial anomalies through our ai detection model",
+    highlights: [
+  "AI-powered sonar image analysis for detecting ghost nets, pipes, cylinders, shipwrecks, and underwater debris",
+
+  "YOLO-based object detection with confidence scoring and bounding-box visualization on sonar imagery",
+
+  "Interactive geospatial dashboard with GPS-tagged anomaly detection and risk-based map markers",
+
+  "Automated hazard scoring, anomaly classification, and downloadable JSON/CSV detection reports",
+
+  "End-to-end sonar analysis workflow with image upload, preprocessing, AI detection, filtering, and results visualization",
+
+  "Responsive research dashboard with mission history, detection analytics, real-time-feeling analysis progress, and detailed anomaly reports",
+],
+    stack: ["React", "Vite", "Tailwind CSS", "Node.js", "Express","Framer Motion","Recharts","CORS","JWT"],
+    
+    links: {
+      live: "https://ocean-sentinel-lemon.vercel.app",
+      code: "https://github.com/ayushsingh7755/ocean-sentinel",
+    },
+  },
+  {
+    tag: "OUT-03",
     name: "Rivbond",
     role: "Full Stack Project",
     description:
@@ -38,7 +64,7 @@ const PROJECTS = [
     },
   },
   {
-    tag: "OUT-03",
+    tag: "OUT-04",
     name: "MindFul News",
     role: "Full Stack Project",
     description:
@@ -51,12 +77,12 @@ const PROJECTS = [
     stack: ["React", "Node.js", "Express", "MongoDB"],
     
     links: {
-      live: "https://rivbond.vercel.app/",
-      code: "https://github.com/ayushsingh7755/rivbond",
+      live: "https://mindful-news.vercel.app",
+      code: "https://github.com/ayushsingh7755/Mindful-News",
     },
   },
   {
-    tag: "OUT-04",
+    tag: "OUT-05",
     name: "Ankita Organic",
     role: "Full Stack Project",
     description:
@@ -97,9 +123,7 @@ export default function Projects() {
               <h3 className="mt-2 text-xl font-semibold text-ivory">
                 {project.name}
               </h3>
-              <p className="mt-1 font-mono text-xs uppercase tracking-[0.15em] text-signal">
-                {project.role}
-              </p>
+              
               <p className="mt-4 text-xs text-ivory-muted">{project.deploy}</p>
 
               {project.links && (
