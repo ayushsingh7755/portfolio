@@ -30,7 +30,7 @@ export default function Contact() {
             <span className="font-mono text-xs text-ivory-muted">ayushsingh.w01@gmail.com</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/ayush-singhb70525314"
+            href="https://www.linkedin.com/in/ayush-singh-b70525314/"
             target="_blank"
             rel="noreferrer"
             className="chip flex items-center justify-between text-sm text-ivory hover:text-copper"
